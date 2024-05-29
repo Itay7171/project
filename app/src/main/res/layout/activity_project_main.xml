@@ -4,176 +4,491 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".project_main">
+   <HorizontalScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="140dp">
+      <GridLayout
+          android:paddingTop="120dp"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_margin="30sp"
+          android:columnCount="6"
+          android:rowCount="5"
+          android:id="@+id/connectFourGridLayout">
 
-    </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="428dp">
+         <Button
+             android:id="@+id/button1"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+         <Button
+             android:id="@+id/button2"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="200dp">
+         <Button
+             android:id="@+id/button3"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+         <Button
+             android:id="@+id/button4"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:onClick="onClickButton"
+             android:textSize="18sp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="256dp">
+         <Button
+             android:id="@+id/button5"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="428dp">
+         <Button
+             android:id="@+id/button6"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:onClick="onClickButton"
+             android:textSize="18sp" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:layout_editor_absoluteX="1dp"
-                tools:layout_editor_absoluteY="428dp">
+         <Button
+             android:id="@+id/button7"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    tools:layout_editor_absoluteX="1dp"
-                    tools:layout_editor_absoluteY="428dp">
+         <Button
+             android:id="@+id/button8"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        tools:layout_editor_absoluteX="1dp"
-                        tools:layout_editor_absoluteY="428dp">
+         <Button
+             android:id="@+id/button9"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-                    </com.google.android.material.textfield.TextInputLayout>
-                </com.google.android.material.textfield.TextInputLayout>
-            </com.google.android.material.textfield.TextInputLayout>
-        </com.google.android.material.textfield.TextInputLayout>
-    </com.google.android.material.textfield.TextInputLayout>
+         <Button
+             android:id="@+id/button10"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="310dp">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="428dp">
+         <Button
+             android:id="@+id/button11"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                tools:layout_editor_absoluteX="1dp"
-                tools:layout_editor_absoluteY="428dp">
+         <Button
+             android:id="@+id/button12"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-            </com.google.android.material.textfield.TextInputLayout>
-        </com.google.android.material.textfield.TextInputLayout>
-    </com.google.android.material.textfield.TextInputLayout>
+         <Button
+             android:id="@+id/button13"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="428dp">
+         <Button
+             android:id="@+id/button14"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+         <Button
+             android:id="@+id/button15"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="486dp">
+         <Button
+             android:id="@+id/button16"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+         <Button
+             android:id="@+id/button17"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="602dp">
+         <Button
+             android:id="@+id/button18"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+         <Button
+             android:id="@+id/button19"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="544dp">
+         <Button
+             android:id="@+id/button20"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+         <Button
+             android:id="@+id/button21"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="414dp"
-        android:layout_height="0dp"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="365dp">
+         <Button
+             android:id="@+id/button22"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+         <Button
+             android:id="@+id/button23"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="3dp"
-        android:layout_height="520dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="82dp" />
+         <Button
+             android:id="@+id/button24"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="3dp"
-        android:layout_height="520dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="82dp" />
+         <Button
+             android:id="@+id/button25"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="3dp"
-        android:layout_height="520dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="179dp"
-        tools:layout_editor_absoluteY="82dp" />
+         <Button
+             android:id="@+id/button26"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="3dp"
-        android:layout_height="520dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="82dp" />
+         <Button
+             android:id="@+id/button27"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="3dp"
-        android:layout_height="520dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="299dp"
-        tools:layout_editor_absoluteY="82dp" />
+         <Button
+             android:id="@+id/button28"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="3dp"
-        android:layout_height="520dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="357dp"
-        tools:layout_editor_absoluteY="82dp" />
+         <Button
+             android:id="@+id/button29"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
+
+         <Button
+             android:id="@+id/button30"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
+
+         <Button
+             android:id="@+id/button31"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
+
+         <Button
+             android:id="@+id/button32"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
+
+         <Button
+             android:id="@+id/button33"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
+
+         <Button
+             android:id="@+id/button34"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
+
+         <Button
+             android:id="@+id/button35"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
+
+         <Button
+             android:id="@+id/button36"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
+
+         <Button
+             android:id="@+id/button37"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
+
+         <Button
+             android:id="@+id/button38"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
+
+         <Button
+             android:id="@+id/button39"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
+
+         <Button
+             android:id="@+id/button40"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
+
+         <Button
+             android:id="@+id/button41"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
+
+         <Button
+             android:id="@+id/button42"
+             android:layout_rowWeight="1"
+             android:layout_columnWeight="1"
+             android:layout_gravity="fill"
+             android:onClick="onClickButton"
+             android:layout_margin="5sp"
+             android:background="@color/white"
+             android:minWidth="10dip"
+             android:textSize="18sp" />
+
+
+
+
+
+      </GridLayout>
+   </HorizontalScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
